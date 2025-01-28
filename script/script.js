@@ -31,7 +31,7 @@ while(num_game_allowed-- > 0) {
             if (list_btns[btn_clicked_id] == 0) {
                 list_btns[btn_clicked_id] = 1;
                
-                btn_clicked.innerHTML = `<img src="../assets/circle.png" alt="O">`;
+                btn_clicked.innerHTML = `<img class="circle_image" src="https://th.bing.com/th/id/R.1f0ad2f4b9e4a9273f9b3524e694ff1b?rik=c4vMvNT6tYL7yA&pid=ImgRaw&r=0">`;
                 btn_clicked.setAttribute('disabled', true);
                 turn_notify.textContent = "player X's turn";
 
@@ -45,7 +45,7 @@ while(num_game_allowed-- > 0) {
                 list_btns[btn_clicked_id] = 2;
                 
             
-                btn_clicked.innerHTML = `<img src="../assets/x.png" alt="X">`;
+                btn_clicked.innerHTML = `<img class="circle_image" src="https://cdn2.iconfinder.com/data/icons/interface-part-2/32/ex-512.png">`;
                 btn_clicked.setAttribute('disabled', true);
                 turn_notify.textContent = "player O's turn";
             }
