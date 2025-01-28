@@ -125,8 +125,8 @@ function winner() {
     }
     if (list_btns[0] === list_btns[3] && list_btns[3] === list_btns[6] && list_btns[3] !== 0) {
         btn01.style.backgroundColor = (list_btns[3] ===2)? 'red': 'blue';
-        btn03.style.backgroundColor = (list_btns[3] ===2)? 'red': 'blue';;
-        btn06.style.backgroundColor = (list_btns[3] ===2)? 'red': 'blue';
+        btn04.style.backgroundColor = (list_btns[3] ===2)? 'red': 'blue';;
+        btn07.style.backgroundColor = (list_btns[3] ===2)? 'red': 'blue';
         
         return list_btns[3];
      }
