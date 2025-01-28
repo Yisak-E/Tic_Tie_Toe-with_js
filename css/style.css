@@ -8,41 +8,61 @@ body{
     display: flex;
     flex-direction: column;
     background-color: antiquewhite;
+    height: 1200px;
 }
 nav > h1{
     font-size: xx-large;
     text-align: center;
     margin: 20px 0;
 }
-#game_body{
-    align-self: center;
-    width:600px;
-    height: 300px;
-   
-    display: flex;
-    flex-direction: row;
-}
+
 .division_1{
-    width: 300px;
-    height: 300px;
+    width: 600px;
+    align-self: center;
+    height: fit-content;
     background-color:cadetblue;
     display:flex;
     flex-direction: column;
-    
+    padding: 10px;
     border-radius: 7px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .row{
     display: flex;
     flex-direction: row;
+    align-self: center;
+    margin-left: 50px;
+   
+    
 }
 .btn{
     background-color: chartreuse;
-    width:100px;
-    height: 100px;
+    width:150px;
+    height: 150px;
     border: solid black;
     border-radius: 5px;
+    
 }
-h2{
-    align-self: center;
+h2, h3{
+    margin-left: 200px;
+    font-size: 2em;
+}
+#now_turn_is{
+    margin-left: 100px;
+    font-size: xx-large;
+}
+#result_display{
+    padding: 0 20px;
+    margin-left: 50px;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+#result_display > input{
+    font-size: 1.1em;
+    width: 300px;
+    
 }
