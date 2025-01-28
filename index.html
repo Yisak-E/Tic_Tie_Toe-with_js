@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="Author" content="Yisak Metaferiya">
         <meta name="description" content="game">
-        <script src="script/script.js"></script>
+        
     </head>
     <body>
         <header>
@@ -14,39 +14,45 @@
                 <h1>Tic Tie Toe</h1>
             </nav>
         </header>
-        <div id="game_body" >
-            <div id="game_part" class="division_1">
+        <div id="game_body" class="division_1">
+            <div>
+            <div id="game_part" >
+                <h2>Board of game</h2><br>
                
             <div id="first_row" class="row">
-                <input type="button" id="btn00" class="btn">
-                <input type="button" id="btn01" class="btn">
-                <input type="button" id="btn02" class="btn">
+                <button id="btn01" class="btn" onclick="marker(id);"></button>
+                <button id="btn02" class="btn" onclick="marker(id);"></button>
+                <button id="btn03" class="btn" onclick="marker(id);"></button>
             </div>
             <div id="second_row" class="row">
-                <input type="button" id="btn10" class="btn">
-                <input type="button" id="btn11" class="btn">
-                <input type="button" id="btn12" class="btn">
+                <button id="btn04" class="btn" onclick="marker(id);"></button>
+                <button id="btn05" class="btn" onclick="marker(id);"></button>
+                <button id="btn06" class="btn" onclick="marker(id);"></button>
             </div>
            <div id="second_row" class="row">
-            <input type="button" id="btn20" class="btn">
-            <input type="button" id="btn21" class="btn">
-            <input type="button" id="btn22" class="btn" >
-           </div>     
+            <button id="btn07" class="btn" onclick="marker(id);"></button>
+            <button id="btn08" class="btn" onclick="marker(id);"></button>
+            <button id="btn09" class="btn" onclick="marker(id);"></button>
+           </div>   
+        </div>
 
-            </div>
-            <div id="display_part" class="division_1">
-                <h2><xx-large>Board of game</xx-large></h2><br>
+          <div>
+                
                 <!--<button>Start Game</button>-->
-                <h3>player _ turn</h3><br><br>
-                <h2><small>Number of wins</small></h2><br>
-                   <div>
-                    <span>Player One : </span>
+                <br>
+                <h3 id="now_turn_is" >player O's turn</ONE></h3><br><br>
+                <h2 style="color: brown; font-size: xx-large;">Number of wins</h2><br>
+                   <div id="result_display">
+                    <span>Player O : </span>
                     <input type="text" id="player_1" class="result" value="0" disabled><br>
-                    <span>Player Two : </span>
+                    <span>Player X : </span>
                     <input type="text" id="player_2" class="result" value="0" disabled>
                    </div>
+                </div>
+
             </div>
 
         </div>
+        <script src="script/script.js"></script>
     </body>
 </html>
