@@ -31,7 +31,7 @@ while(num_game_allowed-- > 0) {
             if (list_btns[btn_clicked_id] == 0) {
                 list_btns[btn_clicked_id] = 1;
                
-                btn_clicked.innerHTML = `<img src="/assets/circle.png">`;
+                btn_clicked.innerHTML = `<img src="../assets/circle.png">`;
                 btn_clicked.setAttribute('disabled', true);
                 turn_notify.textContent = "player X's turn";
 
@@ -45,7 +45,7 @@ while(num_game_allowed-- > 0) {
                 list_btns[btn_clicked_id] = 2;
                 
             
-                btn_clicked.innerHTML = `<img src="/assets/x.png">`;
+                btn_clicked.innerHTML = `<img src="../assets/x.png">`;
                 btn_clicked.setAttribute('disabled', true);
                 turn_notify.textContent = "player O's turn";
             }
